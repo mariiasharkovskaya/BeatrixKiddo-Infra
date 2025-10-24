@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beatrixkiddo
+  namespace: beatrixkiddo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: beatrixkiddo
+  template:
+    metadata:
+      labels:
+        app: beatrixkiddo
+    spec:
+      containers:
+      - name: beatrixkiddo
+        image: mariiasharkovska/beatrixkiddo-amd64:v3.1
+        ports:
+        - containerPort: 80
+      # - name: mysql
+      #   image: mysql:8.0
+      #   volumeMounts:
+      #   - mountPath: /var/lib/mysql
+      #     name: mysql-storage  
+      # volumes:
+      # - name: mysql-storage
+      #   persistentVolumeClaim:
+      #     claimName: mysql-pvс
