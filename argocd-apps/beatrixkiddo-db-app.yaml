@@ -11,4 +11,4 @@ spec:
     path: apps/mysql
   destination:
     server: https://kubernetes.default.svc
-    namespace: beatrixkiddo-database-v2
+    namespace: beatrixkiddo-v2-database

@@ -10,6 +10,8 @@ spec:
   destinations:
   - server: https://kubernetes.default.svc
     namespace: beatrixkiddo-v2
+  - server: https://kubernetes.default.svc
+    namespace: beatrixkiddo-v2-database
   namespaceResourceBlacklist: []
   # - group: '*'
   #   kind: '*'
