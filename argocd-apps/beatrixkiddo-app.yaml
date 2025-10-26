@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: beatrixkiddo
+  namespace: argocd-v2
+spec:
+  project: beatrixkiddo
+  source:
+    repoURL: https://github.com/mariiasharkovskaya/BeatrixKiddo-Infra.git
+    targetRevision: HEAD
+    path: apps/beatrixkiddo-app
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: beatrixkiddo-v2
