@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: beatrixkiddo
+spec:
+  sourceRepos: 
+  - 'https://github.com/mariiasharkovskaya/BeatrixKiddo-Infra.git'
+  sourceNamespaces: 
+  - argocd-v2
+  destinations:
+  - server: https://kubernetes.default.svc
+    namespace: beatrixkiddo-v2
+  namespaceResourceBlacklist: []
+  # - group: '*'
+  #   kind: '*'
