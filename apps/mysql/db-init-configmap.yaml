@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: init-scripts
+data:
+  init.sql: |
+    CREATE DATABASE IF NOT EXISTS beatrixkiddo;
+    USE beatrixkiddo;
+    CREATE TABLE IF NOT EXISTS customers (
+      email VARCHAR(255),
+      message TEXT,
+      date DATETIME,
+      photo BOOLEAN,
+      editing BOOLEAN
+    );
