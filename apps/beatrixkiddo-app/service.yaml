@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: beatrixkiddo-service
-  namespace: beatrixkiddo
+  namespace: beatrixkiddo-v2
 spec:
   selector:
     app: beatrixkiddo
