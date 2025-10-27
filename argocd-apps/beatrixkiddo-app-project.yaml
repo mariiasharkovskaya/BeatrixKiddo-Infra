@@ -20,6 +20,5 @@ spec:
   clusterResourceWhitelist:
     - group: ""
       kind: PersistentVolume
-  clusterResourceWhitelist:
     - group: storage.k8s.io
       kind: StorageClass
