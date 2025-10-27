@@ -13,5 +13,11 @@ spec:
   - server: https://kubernetes.default.svc
     namespace: beatrixkiddo-v2-database
   namespaceResourceBlacklist: []
-  # - group: '*'
-  #   kind: '*'
+    # - group: '*'
+    #   kind: '*'
+  clusterResourceWhitelist:
+    - group: ""
+      kind: PersistentVolume
+  clusterResourceWhitelist:
+    - group: storage.k8s.io
+      kind: StorageClass
