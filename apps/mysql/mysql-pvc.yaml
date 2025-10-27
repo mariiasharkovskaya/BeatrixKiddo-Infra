@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pvc
-  namespace: beatrixkiddo-database
+  namespace: beatrixkiddo-v2-database
 spec:
   accessModes:
     - ReadWriteOnce
