@@ -12,6 +12,8 @@ spec:
     namespace: beatrixkiddo-v2
   - server: https://kubernetes.default.svc
     namespace: beatrixkiddo-v2-database
+  - server: https://kubernetes.default.svc
+    namespace: argocd-v2
   namespaceResourceBlacklist: []
     # - group: '*'
     #   kind: '*'
