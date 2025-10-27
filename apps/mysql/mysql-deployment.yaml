@@ -30,4 +30,4 @@ spec:
           claimName: mysql-v2-pvc
       - name: init-scripts
         configMap:
-          name: db-init-configmap
+          name: init-scripts #db-init-configmap
