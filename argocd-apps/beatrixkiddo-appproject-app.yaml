@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: beatrixkiddo-app-project
+  namespace: argocd-v2
+spec:
+  project: beatrixkiddo
+  source:
+    repoURL: https://github.com/mariiasharkovskaya/BeatrixKiddo-Infra.git
+    targetRevision: HEAD
+    path: argocd-apps
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd-v2
+  # syncPolicy:
+  #   automated:
+  #     prune: true
+  #     selfHeal: true
