@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: mysql-pv
-  namespace: beatrixkiddo-v2-database
+  # namespace: beatrixkiddo-v2-database
   labels:
     type: local
 spec:
