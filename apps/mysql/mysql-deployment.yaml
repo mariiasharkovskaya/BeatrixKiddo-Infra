@@ -18,7 +18,10 @@ spec:
         image: mysql:9
         env:
         - name: MYSQL_ROOT_PASSWORD
-          value: "G6P6Idh"
+          valueFrom:
+            secretKeyRef:
+              name: mysql-pass
+              key: MYSQL_ROOT_PASSWORD
         volumeMounts:
         - mountPath: /var/lib/mysql
           name: mysql-persistent-storage
